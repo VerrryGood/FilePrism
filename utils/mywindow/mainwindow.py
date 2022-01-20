@@ -27,7 +27,7 @@ class MyApp(QMainWindow):
         
         self.setWindowTitle('File Prism')
         self.setWindowIcon(QIcon('Icon.png'))
-        self.setMinimumSize(900, 800)
+        self.setMinimumSize(900, 900)
         self.move_to_center()
         self.show()
     
@@ -43,7 +43,7 @@ class MainWidget(QWidget):
         self.canvas_clear = False
         self.zero_file = False
         
-        self.fig = plt.Figure(figsize=(12, 5))
+        self.fig = plt.Figure(figsize=(10, 7))
         self.fig.tight_layout()
         self.canvas = FigureCanvas(self.fig)
         self.canvas.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
